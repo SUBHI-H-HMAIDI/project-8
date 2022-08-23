@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.text h2 {
+    font-size: 55px;
+    text-transform: uppercase;
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0, 255, 0) 14.28%, 
+    rgb(0, 255, 255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600vw 600vw;
+    animation: col 10s linear infinite forwards;
+}
+@keyframes col {
+    0% {
+       background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 600vw;
+    }
+}
